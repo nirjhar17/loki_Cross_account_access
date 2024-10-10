@@ -1,5 +1,5 @@
 # Loki Integration on AWS STS with the S3 located in the seperate account.
-Here the Assumption is Loki is deployed in Account A and AWS S3 is deployed in account Ba
+Here the Assumption is Loki is deployed in Account A and AWS S3 is deployed in account B
 Documentation use
 - https://docs.aws.amazon.com/eks/latest/userguide/cross-account-access.html
 - https://aws.amazon.com/blogs/containers/cross-account-iam-roles-for-kubernetes-service-accounts/
