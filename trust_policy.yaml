@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Federated": "arn:aws:iam::617563276761:oidc-provider/oidc.op1.openshiftapps.com/2a0l34isdrdj8sv5thgmhl0nlrcheno0"
+            },
+            "Action": "sts:AssumeRoleWithWebIdentity",
+            "Condition": {
+                "StringEquals": {
+                    "oidc.op1.openshiftapps.com/2a0l34isdrdj8sv5thgmhl0nlrcheno0:sub": [
+                        "system:serviceaccount:openshift-logging:logging-loki",
+                        "system:serviceaccount:openshift-logging:logging-loki-ruler",
+                        "system:serviceaccount:openshift-logging:logcollector"
+                    ]
+                }
+            }
+        }
+    ]
+}
