@@ -1,9 +1,9 @@
 # Loki Integration on AWS STS with the S3 located in the seperate account.
 Here the Assumption is Loki is deployed in Account A and AWS S3 is deployed in account Ba
 Documentation use
-https://docs.aws.amazon.com/eks/latest/userguide/cross-account-access.html
-https://aws.amazon.com/blogs/containers/cross-account-iam-roles-for-kubernetes-service-accounts/
-https://aws.amazon.com/blogs/containers/fine-grained-iam-roles-for-red-hat-openshift-service-on-aws-rosa-workloads-with-sts/
+- https://docs.aws.amazon.com/eks/latest/userguide/cross-account-access.html
+- https://aws.amazon.com/blogs/containers/cross-account-iam-roles-for-kubernetes-service-accounts/
+- https://aws.amazon.com/blogs/containers/fine-grained-iam-roles-for-red-hat-openshift-service-on-aws-rosa-workloads-with-sts/
 
 ### Steps
  1. Create the S3 object storage in the second AWS account.
